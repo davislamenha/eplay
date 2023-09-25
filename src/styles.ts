@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const Cores = {
   branco: '#EEE',
@@ -6,11 +6,6 @@ export const Cores = {
   cinza: '#333',
   verde: '#10AC84'
 }
-
-export const Container = styled.div`
-  margin: 0 auto;
-  width: min(100% - 30px, 1440px);
-`
 
 export const GlobalCss = createGlobalStyle`
 * {
@@ -27,5 +22,8 @@ body {
   padding-top: 40px;
 }
 
-
+.container {
+  margin: 0 auto;
+  width: min(100% - 30px, 1440px);
+}
 `
