@@ -1,17 +1,17 @@
 import styled from 'styled-components'
-import { Cores } from '../../styles'
+import { cores } from '../../styles'
 
 export const HeaderBar = styled.header`
   display: flex;
   justify-content: space-between;
-  background-color: ${Cores.cinza};
+  background-color: ${cores.cinza};
   padding: 24px;
   border-radius: 16px;
   margin-bottom: 80px;
   align-items: center;
 
   a {
-    color: ${Cores.branco};
+    color: ${cores.branco};
     text-decoration: none;
     font-weight: bold;
   }
