@@ -1,7 +1,18 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
 
-export const Container = styled.section`
+import { Props } from '.'
+import { Card } from '../Product/styles'
+
+export const Container = styled.section<Omit<Props, 'title'>>`
+  background: ${(props) =>
+    props.background === 'gray' ? cores.cinza : cores.preta};
   padding: 32px 0;
+
+  ${Card} {
+    background: ${(props) =>
+      props.background === 'gray' ? cores.preta : cores.cinza};
+  }
 `
 export const Title = styled.h2`
   font-size: 18px;

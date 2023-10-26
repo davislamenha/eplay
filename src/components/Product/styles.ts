@@ -3,6 +3,7 @@ import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
+  position: relative;
   background-color: ${cores.cinza};
   border-radius: 8px;
   padding: 8px;
@@ -16,6 +17,12 @@ export const Card = styled.div`
     margin-right: 8px;
   }
 `
+export const Infos = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`
+
 export const Titulo = styled.h3`
   font-weight: bold;
   font-size: 16px;
